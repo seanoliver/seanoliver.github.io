@@ -18,6 +18,8 @@
     /* background-color: #F09A9D; */
     --hero-size: 24px;
     --hero-subtitle-size: 20px;
+    --body-text-size: 14px;
+    --body-line-height: 26px;
   }
 
   .header {
@@ -52,6 +54,8 @@
 
     --hero-size: 42px;
     --hero-subtitle-size: 36px;
+    --body-text-size: 18px;
+    --body-line-height: 30px;
   }
 
   .hero {
@@ -73,6 +77,8 @@
 
     --hero-size: 56px;
     --hero-subtitle-size: 48px;
+    --body-text-size: 24px;
+    --body-line-height: 36px;
   }
 }
 
@@ -118,7 +124,7 @@ body {
   /* border: 1px solid black; */
 }
 
-.menu-item a {
+a {
   text-decoration: none;
   color: var(--link-color);
   border-bottom: 2px solid var(--link-secondary-color);
@@ -126,7 +132,7 @@ body {
   padding: 2px 5px;
 }
 
-.menu-item a:hover {
+a:hover {
   text-decoration: none;
   border-bottom: 2px solid var(--link-color);
 
@@ -149,10 +155,25 @@ body {
 
 .hero {
   width: 80%;
+  max-width: 1400px;
   display: flex;
   align-items: center;
   /* border: 1px solid black; */
   justify-content: space-between;
+}
+
+img.sean-pic {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+
+.hero-primary {
+  flex: 3;
+}
+.hero-secondary {
+  flex: 1;
 }
 
 .hero-title {
@@ -171,4 +192,44 @@ body {
   justify-content: center;
   font-size: var(--sm);
   padding: 20px 0px;
+}
+
+.jump a {
+  border-bottom: 0px;
+  background-color: var(--link-secondary-color);
+  border-radius: 5px;
+}
+
+#about, #contact {
+  align-items: center;
+}
+
+.about-body {
+  width: 80%;
+}
+
+.body-text {
+  line-height: var(--body-line-height);
+  font-size: var(--body-text-size);
+}
+
+a.button {
+  border: 0px;
+  border-radius: 5px;
+  background-color: var(--link-secondary-color);
+  padding: 10px 30px;
+}
+.social-icons {
+  display: flex;
+}
+
+.icon-item img {
+  width: 20px;
+  height: 20px;
+  margin: 20px;
+  background-color: var(--link-secondary-color);
+  color: var(--link-color);
+  padding: 10px;
+  border-radius: 5px;
+  /* filter: invert(23%) sepia(56%) saturate(5531%) hue-rotate(213deg) brightness(101%) contrast(101%); */
 }
