@@ -75,6 +75,7 @@
   }
   .hero-secondary {
     order: 1;
+    max-width: 70%;
   }
   .hero-primary {
     order: 2;
