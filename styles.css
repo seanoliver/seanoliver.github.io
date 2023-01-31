@@ -168,7 +168,6 @@ img.sean-pic {
   border-radius: 50%;
 }
 
-
 .hero-primary {
   flex: 3;
 }
@@ -221,6 +220,7 @@ a.button {
 }
 .social-icons {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .icon-item img {
@@ -231,5 +231,4 @@ a.button {
   color: var(--link-color);
   padding: 10px;
   border-radius: 5px;
-  /* filter: invert(23%) sepia(56%) saturate(5531%) hue-rotate(213deg) brightness(101%) contrast(101%); */
 }
